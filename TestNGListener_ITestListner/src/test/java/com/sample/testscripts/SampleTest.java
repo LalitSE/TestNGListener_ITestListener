@@ -1,3 +1,4 @@
+package com.sample.testscripts;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
 
