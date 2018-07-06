@@ -8,38 +8,37 @@ import com.sample.testscripts.BaseTest;
 
 public class Listener extends BaseTest implements ITestListener {
 
-	public void onFinish(ITestContext arg0) {
-		// TODO Auto-generated method stub
+	public void onFinish(ITestContext Result) {
+		
 		
 	}
 
-	public void onStart(ITestContext arg0) {
-		// TODO Auto-generated method stub
+	public void onStart(ITestContext Result) {
+		
 		
 	}
 
-	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {
-		// TODO Auto-generated method stub
+	public void onTestFailedButWithinSuccessPercentage(ITestResult Result) {
+		
 		
 	}
 
-	public void onTestFailure(ITestResult arg0) {
-		// TODO Auto-generated method stub
+	public void onTestFailure(ITestResult Result) {
+		System.out.println("The name of the failed testcase is "+Result.getName());
+	}
+
+	public void onTestSkipped(ITestResult Result) {
+		System.out.println("Skipped testcase is "+Result.getName());
 		
 	}
 
-	public void onTestSkipped(ITestResult arg0) {
-		// TODO Auto-generated method stub
+	public void onTestStart(ITestResult Result) {
+		System.out.println("Testcase started "+Result.getName());
 		
 	}
 
-	public void onTestStart(ITestResult arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void onTestSuccess(ITestResult arg0) {
-		// TODO Auto-generated method stub
+	public void onTestSuccess(ITestResult Result) {
+		System.out.println("Passes testcase: "+Result.getName());
 		
 	}
 
