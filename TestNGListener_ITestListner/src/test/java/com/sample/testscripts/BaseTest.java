@@ -1,4 +1,5 @@
 package com.sample.testscripts;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -13,4 +14,6 @@ public class BaseTest {
 	public void endAfterTest() {
 		System.out.println("This method will execute after Test");
 	}
+
+	
 }

@@ -7,7 +7,6 @@ import org.testng.ITestResult;
 import com.sample.testscripts.BaseTest;
 
 public class Listener extends BaseTest implements ITestListener {
-
 	public void onFinish(ITestContext Result) {
 		
 		
@@ -22,7 +21,8 @@ public class Listener extends BaseTest implements ITestListener {
 		
 		
 	}
-
+	
+	
 	public void onTestFailure(ITestResult Result) {
 		System.out.println("FAILED TEST CASE: "+Result.getName());
 	}
