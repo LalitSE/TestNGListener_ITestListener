@@ -24,21 +24,21 @@ public class Listener extends BaseTest implements ITestListener {
 	}
 
 	public void onTestFailure(ITestResult Result) {
-		System.out.println("The name of the failed testcase is "+Result.getName());
+		System.out.println("FAILED TEST CASE: "+Result.getName());
 	}
 
 	public void onTestSkipped(ITestResult Result) {
-		System.out.println("Skipped testcase is "+Result.getName());
+		System.out.println("SKIPPED TEST CASE: "+Result.getName());
 		
 	}
 
 	public void onTestStart(ITestResult Result) {
-		System.out.println("Testcase started "+Result.getName());
+		System.out.println("TESTCASE STARTED "+Result.getName());
 		
 	}
 
 	public void onTestSuccess(ITestResult Result) {
-		System.out.println("Passes testcase: "+Result.getName());
+		System.out.println("PASSED TESTCASE: "+Result.getName());
 		
 	}
 
